@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SreeVerse – Interactive Web</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <!-- Dark Mode Toggle -->
+  <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Typewriter -->
+  <section id="home" class="section parallax">
+    <h1 class="typewriter">Welcome to SreeVerse ✨</h1>
+    <p>The future is bright, code it right.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section light" data-aos="fade-up">
+    <h2>📖 About This Project</h2>
+    <p>This site showcases my web development journey with interactive and beautiful elements using HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources" class="section" data-aos="fade-up">
+    <h2>📚 Learning Resources</h2>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a></li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section light center" data-aos="fade-up">
+    <h2>📩 Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <button onclick="showMotivation()">Need Motivation? 💡</button>
+  </section>
+
+  <footer>
+    <p>🚀 Made with 💖 by Sree | #SreeVerse</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
